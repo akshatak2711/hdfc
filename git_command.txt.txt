@@ -1,0 +1,47 @@
+
+
+USER@DESKTOP-8JRRKAG MINGW64 ~/Desktop/myproject/hdfc (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   demo.py.txt
+
+
+USER@DESKTOP-8JRRKAG MINGW64 ~/Desktop/myproject/hdfc (main)
+$ git commit -m "this is new file"
+[main 634366f] this is new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.py.txt
+
+USER@DESKTOP-8JRRKAG MINGW64 ~/Desktop/myproject/hdfc (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/akshatak2711/hdfc.git
+   60ef9cb..634366f  main -> main
+
+USER@DESKTOP-8JRRKAG MINGW64 ~/Desktop/myproject/hdfc (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1014 bytes | 84.00 KiB/s, done.
+From https://github.com/akshatak2711/hdfc
+ * branch            main       -> FETCH_HEAD
+   634366f..c531875  main       -> origin/main
+Updating 634366f..c531875
+Fast-forward
+ productdata.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 productdata.py
+
+USER@DESKTOP-8JRRKAG MINGW64 ~/Desktop/myproject/hdfc (main)
+$
